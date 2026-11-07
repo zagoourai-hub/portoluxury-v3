@@ -81,6 +81,17 @@ Siapkan Node.js yang memenuhi persyaratan versi Next.js terpasang dan npm.
 
 4. Buka [http://localhost:3000](http://localhost:3000).
 
+## Menjalankan dengan Docker
+
+Build image dan jalankan container:
+
+```bash
+docker build -t portfolio-rissz .
+docker run --rm -p 3000:3000 portfolio-rissz
+```
+
+Buka [http://localhost:3000](http://localhost:3000). Untuk mengaktifkan asisten AI, jalankan container dengan `docker run --rm -p 3000:3000 --env-file .env.local portfolio-rissz`. File `.env.local` dibaca Docker saat container dimulai dan tidak disalin ke image. Build memerlukan akses internet untuk instalasi dependency dan font Google.
+
 ## Perintah
 
 | Perintah | Kegunaan |

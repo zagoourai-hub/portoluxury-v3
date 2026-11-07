@@ -1,0 +1,12 @@
+node_modules
+.next
+.git
+.env*
+**/.env*
+*.pem
+*.key
+.playwright-mcp
+docs
+test
+*.log
+*.tsbuildinfo
